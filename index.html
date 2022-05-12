@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 6</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <label for="">Name: </label><br><br>
+     <input type="text" id="myText1" placeholder="Enter your Name">
+     <label for="">Email:</label><br><br>
+      <input type="email" id="myText2" placeholder="Enter yor Email">
+      <label for="">Mobile Number:</label><br><br><br>
+      <input type="number" id="myText3" placeholder="Enter your mobile number">
+    
+    <button type="submit" onclick="myFunction()">Try it</button>
+    
+ <div>
+    <p style="color: red; text-align: center;" id="demo1"><b> Name : </b></p>
+    <p style="color: rgb(85, 0, 255); text-align: center;" id="demo2"><b>Email : </b></p>
+    <p style="color: rgb(0, 106, 255); text-align: center;" id="demo3"><b>Mobile Number : </b></p>
+ </div>
+    
+    <script>
+    function myFunction() {
+      var x = document.getElementById("myText1").value;
+      document.getElementById("demo1").innerHTML = x;
+
+      var x = document.getElementById("myText2").value;
+      document.getElementById("demo2").innerHTML = x;
+
+      var x = document.getElementById("myText3").value;
+      document.getElementById("demo3").innerHTML = x;
+    }
+    </script> 
+</body>
+</html>
